@@ -6,36 +6,47 @@ import buzzyHeroImage from '@/assets/buzzy-hero.jpg';
 
 const HeroSection = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-accent/10 to-primary/5">
+    <div className="min-h-screen bg-gradient-sky">
       <div className="container mx-auto px-4 py-16">
         <div className="text-center space-y-8 mb-16">
-          <div className="inline-flex items-center gap-2 bg-gradient-primary text-white px-6 py-2 rounded-full text-sm font-medium shadow-glow">
-            <Heart className="w-4 h-4 animate-pulse" />
-            Meet Buzzy - Your Caring Transport Companion
+          <div className="text-6xl animate-buzzy-bounce mb-4">🚌</div>
+          
+          <div className="inline-flex items-center gap-2 bg-gradient-warm text-secondary-foreground px-8 py-3 rounded-full text-lg font-medium shadow-warm">
+            <Heart className="w-5 h-5 animate-pulse text-red-500" />
+            Hey there! I'm Buzzy 😊
           </div>
           
           <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-            Never worry about{' '}
+            Your caring friend for{' '}
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              missing your bus
+              stress-free commuting
             </span>{' '}
-            again
+            🌟
           </h1>
           
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Buzzy is your empathetic AI companion who tracks buses in real-time, 
-            predicts delays, and provides emotional support during stressful commutes. 
-            Because getting to class should be the easy part of your day.
+            I'm here to make bus delays way less stressful! I'll track your bus in real-time, 
+            predict delays with a smile, and give you the emotional support you need. 
+            Because getting to class should be the <em>easy</em> part of your day! 💙
           </p>
+          
+          <div className="bg-card/80 backdrop-blur-sm rounded-2xl p-6 max-w-2xl mx-auto border border-primary/20">
+            <p className="text-lg font-semibold text-primary mb-2">
+              💡 "Know before you go"
+            </p>
+            <p className="text-muted-foreground">
+              Every student deserves a caring companion for their daily commute
+            </p>
+          </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="hero" size="lg" className="animate-pulse-glow">
+            <Button size="lg" className="bg-gradient-warm hover:bg-gradient-warm/90 text-secondary-foreground shadow-warm">
               <MessageCircle className="w-5 h-5 mr-2" />
-              Chat with Buzzy
+              Chat with Buzzy 💬
             </Button>
-            <Button variant="outline" size="lg" className="border-primary hover:bg-primary hover:text-primary-foreground">
+            <Button variant="outline" size="lg" className="border-primary/40 hover:bg-primary/5 hover:border-primary">
               <MapPin className="w-5 h-5 mr-2" />
-              Track Your Routes
+              Track Your Routes 📍
             </Button>
           </div>
         </div>

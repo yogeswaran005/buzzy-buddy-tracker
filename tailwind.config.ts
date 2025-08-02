@@ -130,7 +130,8 @@ export default {
 				'gradient-primary': 'var(--gradient-primary)',
 				'gradient-warm': 'var(--gradient-warm)',
 				'gradient-calm': 'var(--gradient-calm)',
-				'gradient-hero': 'var(--gradient-hero)'
+				'gradient-hero': 'var(--gradient-hero)',
+				'gradient-sky': 'var(--gradient-sky)'
 			},
 			boxShadow: {
 				'soft': 'var(--shadow-soft)',

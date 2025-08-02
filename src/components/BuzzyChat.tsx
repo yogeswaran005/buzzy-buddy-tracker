@@ -60,16 +60,19 @@ const BuzzyChat = () => {
     let type: 'delay' | 'arrival' | 'general' = 'general';
 
     if (input.includes('late') || input.includes('delay')) {
-      response = "Oh no! I can see you're concerned about delays. Let me check the real-time status for you... 🕐 Bus #23 is currently running 8 minutes late due to traffic on Main Street. I know this is stressful when you have class, but don't worry - I'll keep you updated every step of the way! ❤️";
+      response = "Oh no! I totally get why you're worried about delays 😔 Let me check that for you right away... Bus #23 is running about 7 minutes late due to some traffic on Main Street, but hey - grab a coffee and take a deep breath! ☕ I'll keep you posted every step of the way, and I promise you'll still make it to class. You've got this! 💪❤️";
       type = 'delay';
     } else if (input.includes('bus') || input.includes('route')) {
-      response = "Let me help you with bus information! 🚌 I can see your usual Route #23 to campus. The next bus arrives in 12 minutes at University Station. I'll send you a gentle reminder 5 minutes before it arrives so you don't have to worry about missing it! 😊";
+      response = "Perfect! Let me help you with that 🚌✨ Your usual Route #23 to campus has a bus arriving in about 12 minutes at University Station. Want me to send you a friendly ping 5 minutes before it arrives? That way you can chill and not stress about timing! 😊 Also, Bus #7 looks like a great backup option today!";
       type = 'arrival';
-    } else if (input.includes('stress') || input.includes('worried')) {
-      response = "I understand how stressful transport delays can be, especially when you're trying to get to class or work. Take a deep breath - I'm here with you! 🌸 Let me check all your options and find the best way to get you there safely and on time.";
+    } else if (input.includes('stress') || input.includes('worried') || input.includes('anxious')) {
+      response = "Hey, I totally understand how stressful transport can be when you're trying to get somewhere important 🫂 Take a nice deep breath with me... *breathe in, breathe out* 🌸 I'm right here with you, and we'll figure this out together! Let me check all your best options to get you there safely and on time. You're not alone! 💙";
+      type = 'general';
+    } else if (input.includes('thanks') || input.includes('thank you')) {
+      response = "Aww, you're so welcome! 🥰 That's what I'm here for - to make your day a little brighter and your commute a lot less stressful! Feel free to chat with me anytime, whether it's about buses or just to say hi. I genuinely care about making your journey easier! 💙✨";
       type = 'general';
     } else {
-      response = "I'm listening and here to help! 😊 Whether you need bus times, route information, or just want to chat about your commute, I've got you covered. What would be most helpful for you right now?";
+      response = "Hi there! 😊 I'm all ears and ready to help however I can! Whether you need bus times, route info, delay updates, or even just want to chat about your day - I'm here for you! What's on your mind? 🌟";
     }
 
     return {

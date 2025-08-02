@@ -29,18 +29,18 @@ const Index = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-accent/5 to-primary/5">
+    <div className="min-h-screen bg-gradient-sky">
       {/* Header */}
-      <header className="bg-card/80 backdrop-blur-sm border-b sticky top-0 z-50">
+      <header className="bg-card/90 backdrop-blur-md border-b border-primary/20 sticky top-0 z-50 shadow-soft">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-gradient-primary rounded-full flex items-center justify-center">
-                <Heart className="w-6 h-6 text-white animate-pulse" />
+              <div className="w-12 h-12 bg-gradient-warm rounded-2xl flex items-center justify-center shadow-warm">
+                <span className="text-xl animate-buzzy-bounce">🚌</span>
               </div>
               <div>
-                <h1 className="text-xl font-bold">Buzzy Transport</h1>
-                <p className="text-sm text-muted-foreground">Your caring companion</p>
+                <h1 className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">Buzzy Transport</h1>
+                <p className="text-sm text-muted-foreground">Your caring companion 💙</p>
               </div>
             </div>
             <Button

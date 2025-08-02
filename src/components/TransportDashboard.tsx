@@ -95,12 +95,13 @@ const TransportDashboard = () => {
 
   return (
     <div className="space-y-6">
-      <div className="text-center space-y-2">
+      <div className="text-center space-y-4">
+        <div className="text-4xl animate-buzzy-bounce">🚍</div>
         <h2 className="text-3xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-          Live Transport Tracker
+          Live Transport Tracker 📍
         </h2>
-        <p className="text-muted-foreground">
-          Real-time updates for your daily routes
+        <p className="text-muted-foreground text-lg">
+          Real-time updates for your daily routes - Buzzy's got your back! 😊
         </p>
       </div>
 
@@ -191,14 +192,16 @@ const TransportDashboard = () => {
         ))}
       </div>
 
-      <Card className="bg-gradient-calm text-white">
+      <Card className="bg-gradient-warm border-0 shadow-warm">
         <CardContent className="p-6 text-center">
-          <h3 className="text-xl font-semibold mb-2">
-            Buzzy's Travel Tip 💡
+          <div className="text-3xl mb-3">😊</div>
+          <h3 className="text-xl font-semibold mb-3 text-secondary-foreground">
+            Buzzy's Friendly Update 💡
           </h3>
-          <p className="text-white/90">
-            Bus #7 is arriving in just 2 minutes! This is your most convenient option 
-            to campus today. I'll notify you when it's 1 minute away! 🚌
+          <p className="text-secondary-foreground/90 leading-relaxed">
+            Hey there! 👋 Bus #7 is arriving in just 2 minutes - that's your best bet to campus today! 
+            No stress, I'll ping you when it's 1 minute away so you can gather your things. 
+            You've got perfect timing! 🚌✨
           </p>
         </CardContent>
       </Card>
